@@ -1,8 +1,11 @@
 @extends('layouts.app')
 
-@section('body-class')
+@section('body-class', 'landing-page')
 
 @section('styles')
+@endsection
+
+@section('content')
 @endsection
 
 @section('scripts')
