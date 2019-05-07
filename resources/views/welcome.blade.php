@@ -6,7 +6,12 @@
 @endsection
 
 @section('content')
+
+
+
+
 @endsection
 
-@section('scripts')
+@section('javascript')
 @endsection
+
