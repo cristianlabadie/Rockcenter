@@ -79,22 +79,26 @@
   </div>
 </div>
 
-
-<div class="row">
-  <div class="col-md-6">
-    <div class="card">
-      <div class="card-header card-header-text card-header-primary">
-        <div class="card-text">
-          <h4 class="card-title">Here is the Text</h4>
+<div class="main main-raised">
+  <div class="conteiner">
+    <div class="section text-center section-landing">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="card">
+          <div class="card-header card-header-text card-header-primary">
+            <div class="card-text">
+              <h4 class="card-title">Proximos eventos</h4>
+            </div>
+          </div>
+          <div class="card-body">
+            
+          </div>
         </div>
-      </div>
-      <div class="card-body">
-        The place is close to Barceloneta Beach and bus stop just 2 min by walk and near to "Naviglio" where you can enjoy the main night life in Barcelona...
       </div>
     </div>
   </div>
+  </div>
 </div>
-
 
 
 
