@@ -19,12 +19,13 @@ class CreateUsersTable extends Migration
             $table->string('lastNameFather')->nullable();
             $table->string('lastNameMother')->nullable();
             $table->string('email')->unique();
-            $table->DateTime('dateBirthday');
+            $table->year('dateBirthday');
             $table->timestamp('email_verified_at')->nullable();
-            $table->boolean('grouping')->default(false);
-            $table->boolean('admin')->default(false);
+            $table->boolean('grouping')->default(false); //si pertecene a un grupo o no
+            $table->boolean('admin')->default(false); //si es admin el usuario.
             $table->string('password');
             $table->rememberToken();
+            $table->softDeletes();
             $table->timestamps();
         });
     }

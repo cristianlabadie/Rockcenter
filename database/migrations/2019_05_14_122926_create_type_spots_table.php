@@ -4,7 +4,7 @@ use Illuminate\Support\Facades\Schema;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Database\Migrations\Migration;
 
-class CreateProvincesTable extends Migration
+class CreateTypeSpotsTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,12 +13,9 @@ class CreateProvincesTable extends Migration
      */
     public function up()
     {
-        Schema::create('provinces', function (Blueprint $table) {
+        Schema::create('type_spots', function (Blueprint $table) {
             $table->bigIncrements('id');
-            $table->string('nameProvince');
-            //FK region_id from table regions
-            $table->unsignedBigInteger('region_id');
-            $table->foreign('region_id')->references('id')->on('regions');
+            $table->string('typeSpot');
             $table->timestamps();
         });
     }
@@ -30,6 +27,6 @@ class CreateProvincesTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('provinces');
+        Schema::dropIfExists('type_spots');
     }
 }
